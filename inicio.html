@@ -15,7 +15,7 @@
             justify-content: center;
             align-items: flex-start;
             min-height: 100vh;
-            padding: 40px 20px; /* <-- margen arriba y a los lados */
+            padding: 40px 20px;
             box-sizing: border-box;
         }
 
@@ -113,6 +113,17 @@
             color: #0d6efd;
         }
 
+        /* ENLACES */
+        .lista-items a {
+            color: #0d6efd;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .lista-items a:hover {
+            text-decoration: underline;
+        }
+
         /* CONTACTO */
         .seccion-contacto {
             background-color: #f1f5ff;
@@ -155,8 +166,15 @@
         <section class="seccion-trabajos">
             <h2 class="seccion-titulo">💼 Trabajos</h2>
             <ul class="lista-items">
-                <li><i class="bi bi-code-slash"></i> <a href="#">Trabajo CSS</a></li>
-                <li><i class="bi bi-calculator"></i> <a href="#">Trabajo Calculadora</a></li>
+                <li><i class="bi bi-code-slash"></i> 
+                    <a href="trabajo-css.html" target="_blank">Trabajo CSS</a>
+                </li>
+                <li><i class="bi bi-calculator"></i> 
+                    <a href="trabajo-calculadora.html" target="_blank">Trabajo Calculadora</a>
+                </li>
+                <li><i class="bi bi-laptop"></i> 
+                    <a href="trabajo-portafolio.html" target="_blank">Trabajo Portafolio</a>
+                </li>
             </ul>
         </section>
 
@@ -166,20 +184,24 @@
 
             <h5 class="categoria-titulo text-primary mt-3">CSS</h5>
             <ul class="lista-items">
-                <li><i class="bi bi-palette"></i> Eje 01</li>
-                <li><i class="bi bi-brush"></i> Eje 02</li>
+                <li><i class="bi bi-palette"></i> <a href="css-eje01.html" target="_blank">Eje 01</a></li>
+                <li><i class="bi bi-brush"></i> <a href="css-eje02.html" target="_blank">Eje 02</a></li>
             </ul>
 
             <h5 class="categoria-titulo text-primary mt-3">HTML</h5>
             <ul class="lista-items">
-                <li><i class="bi bi-filetype-html"></i> Eje 01</li>
-                <li><i class="bi bi-filetype-html"></i> Eje 02</li>
+                <li><i class="bi bi-filetype-html"></i> <a href="html-eje01.html" target="_blank">Eje 01</a></li>
+                <li><i class="bi bi-filetype-html"></i> <a href="html-eje02.html" target="_blank">Eje 02</a></li>
             </ul>
 
             <h5 class="categoria-titulo text-primary mt-3">JavaScript</h5>
             <ul class="lista-items">
-                <li><i class="bi bi-lightning-charge"></i> Eje 01</li>
-                <li><i class="bi bi-lightning"></i> Eje 02</li>
+                <li><i class="bi bi-lightning-charge"></i> <a href="/DEY-CODE/trabajosjava/pract01.html" target="_blank">Eje 01</a></li>
+                <li><i class="bi bi-lightning"></i> <a href="js-eje02.html" target="_blank">Eje 02</a></li>
+                <li><i class="bi bi-lightning-charge"></i> <a href="js-eje01.html" target="_blank">Eje 03</a></li>
+                <li><i class="bi bi-lightning"></i> <a href="js-eje02.html" target="_blank">Eje 04</a></li>
+                <li><i class="bi bi-lightning-charge"></i> <a href="js-eje01.html" target="_blank">Eje 05</a></li>
+                <li><i class="bi bi-lightning"></i> <a href="js-eje02.html" target="_blank">Eje 06</a></li>
             </ul>
         </section>
 
