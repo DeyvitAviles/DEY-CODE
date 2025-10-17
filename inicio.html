@@ -11,12 +11,17 @@
         body {
             background: linear-gradient(135deg, #e3f2fd, #bbdefb);
             font-family: 'Poppins', sans-serif;
-            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px; /* <-- margen arriba y a los lados */
+            box-sizing: border-box;
         }
 
         .portafolio-contenedor {
+            width: 100%;
             max-width: 800px;
-            margin: auto;
             background-color: white;
             border-radius: 15px;
             overflow: hidden;
@@ -51,6 +56,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 25px;
             padding: 30px;
             border-bottom: 2px solid #eee;
@@ -133,7 +139,7 @@
 
         <!-- ENCABEZADO -->
         <div class="encabezado">
-            <h1>Deyvit Avilés</h1>
+            <h1>David Avilés</h1>
             <p>Desarrollador Web | Estudiante de Ingeniería de Sistemas</p>
         </div>
 
@@ -188,3 +194,4 @@
 
 </body>
 </html>
+
