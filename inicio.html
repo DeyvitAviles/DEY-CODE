@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de David Avilés</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            font-family: 'Poppins', sans-serif;
+            padding: 30px;
+        }
+
+        .portafolio-contenedor {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .portafolio-contenedor:hover {
+            transform: scale(1.01);
+        }
+
+        /* ENCABEZADO */
+        .encabezado {
+            background: linear-gradient(90deg, #0d6efd, #42a5f5);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .encabezado h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .encabezado p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* PERFIL */
+        .perfil-cabecera {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            padding: 30px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .perfil-foto {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #0d6efd;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            object-fit: cover;
+        }
+
+        .perfil-descripcion {
+            max-width: 500px;
+            text-align: justify;
+            color: #444;
+            font-size: 1rem;
+        }
+
+        /* SECCIONES */
+        .seccion-titulo {
+            border-left: 5px solid #0d6efd;
+            padding-left: 10px;
+            margin: 30px 0 15px 0;
+            font-size: 1.5rem;
+            color: #0d6efd;
+            font-weight: 600;
+        }
+
+        .lista-items {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .lista-items li {
+            background-color: #f8f9fa;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .lista-items li:hover {
+            background-color: #e3f2fd;
+            transform: translateX(5px);
+        }
+
+        .lista-items li i {
+            color: #0d6efd;
+        }
+
+        /* CONTACTO */
+        .seccion-contacto {
+            background-color: #f1f5ff;
+            border-top: 2px solid #0d6efd;
+            text-align: center;
+            padding: 25px;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .seccion-contacto a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        .seccion-contacto a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="portafolio-contenedor">
+
+        <!-- ENCABEZADO -->
+        <div class="encabezado">
+            <h1>Deyvit Avilés</h1>
+            <p>Desarrollador Web | Estudiante de Ingeniería de Sistemas</p>
+        </div>
+
+        <!-- PERFIL -->
+        <div class="perfil-cabecera">
+            <img src="https://via.placeholder.com/130" alt="Foto de perfil" class="perfil-foto">
+            <div class="perfil-descripcion">
+                <p>Soy un estudiante apasionado por la tecnología, la programación y la innovación. Me gusta crear proyectos creativos, aprender nuevas herramientas y aplicar soluciones eficientes a problemas reales.</p>
+            </div>
+        </div>
+
+        <!-- TRABAJOS -->
+        <section class="seccion-trabajos">
+            <h2 class="seccion-titulo">💼 Trabajos</h2>
+            <ul class="lista-items">
+                <li><i class="bi bi-code-slash"></i> <a href="#">Trabajo CSS</a></li>
+                <li><i class="bi bi-calculator"></i> <a href="#">Trabajo Calculadora</a></li>
+            </ul>
+        </section>
+
+        <!-- EJERCICIOS -->
+        <section class="seccion-ejercicios">
+            <h2 class="seccion-titulo">🧠 Ejercicios</h2>
+
+            <h5 class="categoria-titulo text-primary mt-3">CSS</h5>
+            <ul class="lista-items">
+                <li><i class="bi bi-palette"></i> Eje 01</li>
+                <li><i class="bi bi-brush"></i> Eje 02</li>
+            </ul>
+
+            <h5 class="categoria-titulo text-primary mt-3">HTML</h5>
+            <ul class="lista-items">
+                <li><i class="bi bi-filetype-html"></i> Eje 01</li>
+                <li><i class="bi bi-filetype-html"></i> Eje 02</li>
+            </ul>
+
+            <h5 class="categoria-titulo text-primary mt-3">JavaScript</h5>
+            <ul class="lista-items">
+                <li><i class="bi bi-lightning-charge"></i> Eje 01</li>
+                <li><i class="bi bi-lightning"></i> Eje 02</li>
+            </ul>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="seccion-contacto">
+            <h4 class="text-primary fw-bold mb-3">📬 Contacto</h4>
+            <p>Email: <a href="mailto:david@example.com">david@example.com</a></p>
+            <p>GitHub: <a href="#">github.com/david</a></p>
+        </section>
+
+    </div>
+
+</body>
+</html>
